@@ -1,0 +1,203 @@
+header {
+  height: 20px;
+  background-color: blueviolet;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+/* -----LEFT BAR SECTION----*/
+#left_bar {
+  display: inline-flex;
+
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 17.7%;
+  height: 100%;
+  background-color: transparent;
+}
+
+#cards {
+  width: 75%;
+  background-color: aquamarine;
+  margin: 1.5rem 1.5rem;
+}
+
+/* -----LEFT BAR SECTION----*/
+
+/* -----GENERAL CONTENT SECTION----*/
+
+#content {
+  width: 82.3%;
+  height: 500vh;
+  background-color: #0e1821;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 0%;
+  margin: 0%;
+}
+/* -----GENERAL CONTENT SECTION----*/
+
+/* -----ABOUT ME SECTION----*/
+
+#about_section {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+
+  margin-top: 1.5rem;
+  padding-right: 0%;
+  background-color: transparent;
+  width: 96%;
+}
+.large_spacers {
+  background-color: #32afc9;
+  display: flex;
+  width: 38.4rem;
+  height: 40rem;
+  border-radius: 3rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  flex-shrink: 0;
+}
+
+.skinny_spacers {
+  background-color: #e59cda;
+  display: flex;
+  width: 27.5rem;
+  height: 40rem;
+  border-radius: 3rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.group_text {
+  margin-left: 3.88rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 3.88rem;
+}
+
+/* Define styles for the circular section */
+.circular-section {
+  width: 200px; /* Adjust the width and height to your preference */
+  height: 200px;
+  border-radius: 50%; /* Makes the section circular */
+  overflow: hidden; /* Hides anything outside the circular area */
+  position: relative; /* Allows positioning of the image inside */
+}
+
+/* Style the image within the circular section */
+.circular-section img {
+  width: auto;
+  height: 100%;
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+/* -----ABOUT ME SECTION----*/
+
+/* -----INTERESTS SECTION----*/
+
+#interests_section {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+
+  margin-top: 3rem;
+  padding-right: 0%;
+  background-color: transparent;
+  width: 96%;
+}
+
+/* CHANGE COLOR TO SKINNY SPACER CLASS*/
+.override-color {
+  background-color: #ffb600;
+}
+
+.flat_scpacers_column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /*parent*/
+}
+
+.flat_spacer1 {
+  background-color: #32afc9;
+  display: flex;
+  width: 37rem;
+  height: 19rem;
+  border-radius: 3rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.flat_spacer2 {
+  background-color: #e59cda;
+  display: flex;
+  width: 37rem;
+  height: 19rem;
+  border-radius: 3rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* -----INTERESTS SECTION----*/
+
+
+/*-----PORTFOLIO SECTION----*/
+
+#portfolio_section{
+display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+
+  margin-top: 3rem;
+  padding-right: 0%;
+  background-color: transparent;
+  width: 96%;
+  height: auto;
+}
+
+#portfolioBottom{
+  display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+  
+    margin-top: 1.5rem;
+    padding-right: 0%;
+    background-color: transparent;
+    width: 96%;
+    height: auto;
+  }
+
+
+
+.flat_large_spacer{
+  background-color: #e59cda;
+  border-radius: 3rem;
+  width: 68rem;
+  height: 20rem;
+}
+.self{
+  align-self: flex-end;
+}
