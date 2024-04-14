@@ -10,9 +10,10 @@ body {
   margin-top: 0px;
   margin-left: 0px;
   margin-right: 0px;
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: row;
+  justify-content: start;
 }
 /* -----LEFT BAR SECTION----*/
 #left_bar {
@@ -37,8 +38,8 @@ body {
 /* -----GENERAL CONTENT SECTION----*/
 
 #content {
-  width: 82.3%;
-  height: 480vh;
+  width: 100%;
+  height: 488vh;
   background-color: #0e1821;
   display: flex;
   flex-direction: column;
@@ -46,6 +47,7 @@ body {
   align-items: center;
   padding: 0%;
   margin: 0%;
+  margin-left: 17.7%; /* This margin allow us to have the position fixed in the menu on th left*/
 }
 /* -----GENERAL CONTENT SECTION----*/
 
@@ -225,16 +227,16 @@ a {
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300);
 
-
 .menu {
   display: inline-flex;
+  position: fixed;
 
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
   width: 17.7%;
   height: 100%;
-  background-color: transparent;
+  background-color: #e59cda;
 }
 
 .cards {
@@ -260,7 +262,8 @@ ul {
 li,
 ul label.title,
 ul,
-a {/*GENERAL STYLE FOR THE MENU*/
+a {
+  /*GENERAL STYLE FOR THE MENU*/
   width: 100%;
   color: #fff;
   font-family: "Montserrat", "Open Sans", sans-serif;
