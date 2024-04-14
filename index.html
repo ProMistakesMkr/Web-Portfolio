@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="module" src="components.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Santiago Granobles</title>
 </head>
 
@@ -14,13 +16,66 @@
     <!-- <header id="header">
         <p>espacio header</p>
     </header>-->
-    <aside id="left_bar">
+    <!--  <aside>
+        <h2>Navigation</h2>
+        <template id="navigation-cards">
+            <navigation-card></navigation-card>
+          </template>
+      </aside> -->
+
+    <!-- <aside id="left_bar">
         <section id="cards">
             qidwqdoiqnwidnebwi
 
 
         </section>
-    </aside>
+        <section id="cardjs"></section>
+    </aside> -->
+
+    <!-- TEST AREA NAVIGATION -->
+
+
+    <nav class="menu">
+
+        <ul class="cards">
+            <input type="radio" name="menu" id="archive" checked>
+            <li>
+                <label for="archive" class="title"><i class="fa fa-folder"></i>Archive</label>
+                <p>Bla bla bla</p>
+                <!-- <a href="#">New File</a>
+                    <a href="#">Open File</a>
+                    <a href="#">Save As...</a>
+                    <a href="#">Exit</a> -->
+            </li>
+            <input type="radio" name="menu" id="edit">
+            <li>
+                <label for="edit" class="title"><i class="fa fa-edit"></i>Edit</label>
+                <a href="#">Copy</a>
+                <a href="#">Cut</a>
+                <a href="#">Paste</a>
+                <a href="#">Undo</a>
+            </li>
+            <input type="radio" name="menu" id="tools">
+            <li>
+                <label for="tools" class="title"><i class="fa fa-gavel"></i>Tools</label>
+                <a href="#">Build</a>
+                <a href="#">Macros</a>
+                <a href="#">Command</a>
+                <a href="#">Snippets</a>
+            </li>
+            <input type="radio" name="menu" id="preferences">
+            <li>
+                <label for="preferences" class="title"><i class="fa fa-gears"></i>Preferences</label>
+                <a href="#">Browser</a>
+                <a href="#">Settings</a>
+                <a href="#">Packages</a>
+                <a href="#">Theme</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <!-- TEST AREA NAVIGATION END-->
     <main id="content">
         <section id="about_section">
             <div class="large_spacers">
@@ -60,16 +115,28 @@
                 <div class="flat_spacer2"></div>
             </div>
             <div class="skinny_spacers override-color"></div>
-            
-            
+
+
 
         </section>
         <section id="portfolioBottom">
             <div class="flat_large_spacer" id="self"></div>
         </section>
-        <section id="approach"></section>
-        <section id="contact"></section>
+        <section id="approach">
+            <div class="xl_spacer"></div>
+        </section>
+        <section id="contact">
+            <div class="xl_spacer override-color1"></div>
+        </section>
+        <footer class="footer_github">
+            <p><a href="https://github.com/ProMistakesMkr" target="_blank" rel="noopener noreferrer">GitHub
+                    profile</a>
+            </p>
+
+        </footer>
     </main>
+
+    <script src="components.js"></script>
 
 </body>
 

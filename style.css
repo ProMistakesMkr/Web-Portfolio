@@ -6,6 +6,7 @@ header {
 }
 
 body {
+  background-color: #0e1821;
   margin-top: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -37,7 +38,7 @@ body {
 
 #content {
   width: 82.3%;
-  height: 500vh;
+  height: 480vh;
   background-color: #0e1821;
   display: flex;
   flex-direction: column;
@@ -140,7 +141,7 @@ body {
 .flat_spacer1 {
   background-color: #32afc9;
   display: flex;
-  width: 37rem;
+  width: 38.2rem;
   height: 19rem;
   border-radius: 3rem;
   flex-direction: column;
@@ -152,7 +153,7 @@ body {
 .flat_spacer2 {
   background-color: #e59cda;
   display: flex;
-  width: 37rem;
+  width: 38.2rem;
   height: 19rem;
   border-radius: 3rem;
   flex-direction: column;
@@ -163,11 +164,10 @@ body {
 
 /* -----INTERESTS SECTION----*/
 
-
 /*-----PORTFOLIO SECTION----*/
 
-#portfolio_section{
-display: flex;
+#portfolio_section {
+  display: flex;
   justify-content: space-evenly;
   flex-direction: row;
 
@@ -178,26 +178,162 @@ display: flex;
   height: auto;
 }
 
-#portfolioBottom{
+#portfolioBottom {
   display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-  
-    margin-top: 1.5rem;
-    padding-right: 0%;
-    background-color: transparent;
-    width: 96%;
-    height: auto;
-  }
+  justify-content: space-evenly;
+  flex-direction: row;
 
+  margin-top: 1.5rem;
+  padding-right: 0%;
+  background-color: transparent;
+  width: 96%;
+  height: auto;
+}
 
-
-.flat_large_spacer{
+.flat_large_spacer {
   background-color: #e59cda;
   border-radius: 3rem;
   width: 68rem;
   height: 20rem;
 }
-.self{
+.self {
   align-self: flex-end;
+}
+
+.xl_spacer {
+  background-color: #32afc9;
+  border-radius: 3rem;
+  width: 68rem;
+  height: 29rem;
+  margin-top: 3rem;
+}
+
+.override-color1 {
+  background-color: #ffb600;
+}
+
+.footer_github {
+  padding: 2rem;
+}
+
+a {
+  color: aliceblue;
+}
+
+/*------TEST AREA-----*/
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300);
+
+
+.menu {
+  display: inline-flex;
+
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 17.7%;
+  height: 100%;
+  background-color: transparent;
+}
+
+.cards {
+  width: 75%;
+  background-color: aquamarine;
+  margin: 1.5rem 1.5rem;
+}
+
+nav {
+  /*   position: fixed; */
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 20%;
+  height: 100%;
+  background-color: #0e1821;
+}
+
+ul {
+  padding-left: 0%;
+}
+
+li,
+ul label.title,
+ul,
+a {/*GENERAL STYLE FOR THE MENU*/
+  width: 100%;
+  color: #fff;
+  font-family: "Montserrat", "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-weight: bold;
+}
+
+ul label {
+  /*SIZE OF THE TITLE SECTION*/
+  height: 35px;
+}
+ul li {
+  /* HIDES THE OVERFLOW MENUS*/
+  height: 35px;
+  overflow: hidden;
+  transition: all 0.3s;
+  padding-left: 0%; /*this does not fix padding left side ul li*/
+  text-indent: 0; /*thi does'nt fix it either*/
+  margin-left: 0%; /*Nothing yet*/
+  list-style-position: inside; /*Does not remove indentation*/
+  list-style-type: none;
+}
+li {
+  display: block;
+  background-color: #a34545;
+  border-radius: 1rem; /*BORDER RADIUS FOR THE INNER MENU*/
+  margin: 0.5rem;
+}
+label.title {
+  border-radius: 1rem; /* BOrder radius for the title cards*/
+  font-size: 14px;
+  background-color: #459da3;
+  /* padding: 10px 15px; */
+  cursor: pointer;
+  transition: all 0.25s;
+}
+a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 10px 25px;
+  transition: all 0.25s;
+}
+a:hover {
+  background-color: #444;
+  box-shadow: inset 5px 0px 0px 0px #fff;
+}
+label:hover {
+  text-shadow: 0px 0px 10px #fff;
+}
+input[type="radio"] {
+  display: none;
+}
+#edit:checked + li,
+#archive:checked + li,
+#tools:checked + li,
+#preferences:checked + li {
+  height: 179px;
+}
+i {
+  margin-right: 12px;
+}
+@media screen and (max-width: 600px) {
+  nav {
+    width: 100%;
+    position: relative;
+  }
+  main {
+    width: 100%;
+    position: relative;
+  }
 }
