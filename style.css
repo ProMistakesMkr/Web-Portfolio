@@ -289,6 +289,12 @@ ul li {
   list-style-position: inside; /*Does not remove indentation*/
   list-style-type: none;
 }
+
+ul{
+  padding: 0px !important;
+}
+
+
 li {
   display: block;
   background-color: #a34545;
