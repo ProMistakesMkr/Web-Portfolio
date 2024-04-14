@@ -236,13 +236,14 @@ a {
   gap: 1.5rem;
   width: 17.7%;
   height: 100%;
-  background-color: #e59cda;
+  background-color: #0e1821
 }
 
 .cards {
   width: 75%;
   background-color: aquamarine;
   margin: 1.5rem 1.5rem;
+  height: 50rem; /* Inner height for the cards section */
 }
 
 nav {
@@ -275,8 +276,8 @@ a {
 }
 
 ul label {
-  /*SIZE OF THE TITLE SECTION*/
-  height: 35px;
+  /*SIZE OF THE TITLE SECTION WHEN OPENED*/
+  height: 2.5rem;
 }
 ul li {
   /* HIDES THE OVERFLOW MENUS*/
@@ -290,10 +291,15 @@ ul li {
   list-style-type: none;
 }
 
-ul{
-  padding: 0px !important;
+ul {
+  padding: 0px !important; /*removes default indentation of the ul menu*/
 }
 
+.card_description {
+  padding-top: 65%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
 li {
   display: block;
@@ -301,26 +307,20 @@ li {
   border-radius: 1rem; /*BORDER RADIUS FOR THE INNER MENU*/
   margin: 0.5rem;
 }
+
+.first_menu {
+  margin-top: 0%; /*This makes de first section of the left menu align with the content spacers no the right*/
+}
+
 label.title {
   border-radius: 1rem; /* BOrder radius for the title cards*/
   font-size: 14px;
   background-color: #459da3;
-  /* padding: 10px 15px; */
+  padding: 8px 15px;
   cursor: pointer;
   transition: all 0.25s;
 }
-a {
-  font-size: 12px;
-  text-decoration: none;
-  color: #fff;
-  display: block;
-  padding: 10px 25px;
-  transition: all 0.25s;
-}
-a:hover {
-  background-color: #444;
-  box-shadow: inset 5px 0px 0px 0px #fff;
-}
+
 label:hover {
   text-shadow: 0px 0px 10px #fff;
 }
@@ -330,7 +330,8 @@ input[type="radio"] {
 #edit:checked + li,
 #archive:checked + li,
 #tools:checked + li,
-#preferences:checked + li {
+#preferences:checked + li,
+#contact:checked + li {
   height: 179px;
 }
 i {
