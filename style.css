@@ -296,7 +296,7 @@ ul {
 }
 
 .card_description {
-  padding-top: 65%;
+  padding-top: 50%;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -310,15 +310,41 @@ li {
 
 .first_menu {
   margin-top: 0%; /*This makes de first section of the left menu align with the content spacers no the right*/
+  background-color: #e59cda;
 }
+/*  HERE I CHANGE THE COLOR OF THE INDIVIDUAL MENUS ON THE LEFT*/
+.section2{
+  background-color: #32afc9;
+}
+
+.section3{
+  background-color: #ffb600;
+}
+
+.section4{
+  background-color: #e59cda;
+}
+
+.section5{
+  background-color: #32afc9;
+}
+/*  HERE I CHANGE THE COLOR OF THE INDIVIDUAL MENUS ON THE LEFT*/
 
 label.title {
   border-radius: 1rem; /* BOrder radius for the title cards*/
   font-size: 14px;
-  background-color: #459da3;
+  background-color: #32afc9;
   padding: 8px 15px;
   cursor: pointer;
   transition: all 0.25s;
+}
+
+#colorOverride1{
+  background-color: #e59cda;
+}
+
+#colorOverride3{
+  background-color: #ffb600;
 }
 
 label:hover {
@@ -327,12 +353,12 @@ label:hover {
 input[type="radio"] {
   display: none;
 }
-#edit:checked + li,
-#archive:checked + li,
-#tools:checked + li,
-#preferences:checked + li,
+#interests:checked + li,
+#about:checked + li,
+#portfolio:checked + li,
+#approach:checked + li,
 #contact:checked + li {
-  height: 179px;
+  height: 25rem; /* Size of the inner section of the popups in the left menu */
 }
 i {
   margin-right: 12px;
