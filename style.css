@@ -223,9 +223,8 @@ a {
 }
 
 /*------TEST AREA-----*/
-
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300);
+/* 
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css); */
 
 .menu {
   display: inline-flex;
@@ -236,7 +235,7 @@ a {
   gap: 1.5rem;
   width: 17.7%;
   height: 100%;
-  background-color: #0e1821
+  background-color: #0e1821;
 }
 
 .cards {
@@ -261,13 +260,12 @@ ul {
 }
 
 li,
-ul label.title,
-ul,
-a {
+/* ul label.title, */
+ul {
   /*GENERAL STYLE FOR THE MENU*/
   width: 100%;
-  color: #fff;
-  font-family: "Montserrat", "Open Sans", sans-serif;
+  color: #0e1821;
+  font-family: "Montserrat";
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -281,7 +279,7 @@ ul label {
 }
 ul li {
   /* HIDES THE OVERFLOW MENUS*/
-  height: 35px;
+  height: 3rem; /* pill size fo the left menu*/
   overflow: hidden;
   transition: all 0.3s;
   padding-left: 0%; /*this does not fix padding left side ul li*/
@@ -289,6 +287,8 @@ ul li {
   margin-left: 0%; /*Nothing yet*/
   list-style-position: inside; /*Does not remove indentation*/
   list-style-type: none;
+  display: flex;
+  
 }
 
 ul {
@@ -296,7 +296,7 @@ ul {
 }
 
 .card_description {
-  padding-top: 50%;
+  padding-top: 21.5rem;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -313,42 +313,61 @@ li {
   background-color: #e59cda;
 }
 /*  HERE I CHANGE THE COLOR OF THE INDIVIDUAL MENUS ON THE LEFT*/
-.section2{
+.section2 {
   background-color: #32afc9;
 }
 
-.section3{
+.section3 {
   background-color: #ffb600;
 }
 
-.section4{
+.section4 {
   background-color: #e59cda;
 }
 
-.section5{
+.section5 {
   background-color: #32afc9;
 }
 /*  HERE I CHANGE THE COLOR OF THE INDIVIDUAL MENUS ON THE LEFT*/
 
 label.title {
   border-radius: 1rem; /* BOrder radius for the title cards*/
-  font-size: 14px;
   background-color: #32afc9;
-  padding: 8px 15px;
+  padding: 15px 15px; /* Here I fix the centering of the text inside the pill*/
   cursor: pointer;
   transition: all 0.25s;
 }
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600 !important; /* Bold weight for Montserrat */
+  font-size: 2rem !important;
+  color: #0e1821;
+  margin-bottom: 2rem !important;
+}
 
-#colorOverride1{
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600 !important; /* Medium weight for Montserrat */
+  font-size: 16px !important;
+  color: #0e1821;
+}
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300 !important; /* Light weight for Montserrat */
+  font-size: 14px !important;
+  color: #0e1821;
+}
+
+#colorOverride1 {
   background-color: #e59cda;
 }
 
-#colorOverride3{
+#colorOverride3 {
   background-color: #ffb600;
 }
 
 label:hover {
-  text-shadow: 0px 0px 10px #fff;
+  text-shadow: 0px 0px 10px #fff; /*Little text effect for the menu*/
 }
 input[type="radio"] {
   display: none;
@@ -358,7 +377,7 @@ input[type="radio"] {
 #portfolio:checked + li,
 #approach:checked + li,
 #contact:checked + li {
-  height: 25rem; /* Size of the inner section of the popups in the left menu */
+  height: 26rem; /* Size of the inner section of the popups in the left menu */
 }
 i {
   margin-right: 12px;
