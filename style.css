@@ -197,9 +197,14 @@ body {
   border-radius: 3rem;
   width: 68rem;
   height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.self {
+.project4 {
   align-self: flex-end;
+  justify-content: center;
+  align-items: center;
 }
 
 .xl_spacer {
@@ -208,6 +213,10 @@ body {
   width: 68rem;
   height: 29rem;
   margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .override-color1 {
@@ -288,7 +297,6 @@ ul li {
   list-style-position: inside; /*Does not remove indentation*/
   list-style-type: none;
   display: flex;
-  
 }
 
 ul {
@@ -342,7 +350,11 @@ h1 {
   font-weight: 600 !important; /* Bold weight for Montserrat */
   font-size: 2rem !important;
   color: #0e1821;
-  margin-bottom: 2rem !important;
+  margin-bottom: 0rem !important;
+}
+pre {
+  height: 2rem;
+  margin: 0% !important;
 }
 
 h3 {
@@ -358,7 +370,7 @@ h4 {
   color: #0e1821;
 }
 
-#mini_card{
+#mini_card {
   background-color: #e59cda;
   height: 2rem;
   width: 7rem;
@@ -368,15 +380,14 @@ h4 {
   align-items: center;
 }
 
-.github_link{
+.github_link {
   padding-top: 15px;
 }
 
-a{
+a {
   color: #0e1821 !important;
   text-decoration: none !important;
 }
-
 
 #colorOverride1 {
   background-color: #e59cda;
@@ -402,6 +413,29 @@ input[type="radio"] {
 i {
   margin-right: 12px;
 }
+
+.portfolio_image1:hover {
+  background-image: url(https://mir-s3-cdn-cf.behance.net/projects/404/cff287138547019.Y3JvcCwxMzgwLDEwODAsNTEsMA.png);
+  transition: 5s;
+  transition-delay: 5s;
+}
+.portfolio_image2:hover {
+  background-image: url(https://mir-s3-cdn-cf.behance.net/projects/404/cec4d6158573537.Y3JvcCwxMzgwLDEwODAsMCww.png);
+  transition: 5s;
+  transition-delay: 5s;
+}
+
+.portfolio_image3:hover {
+  background-image: url(https://mir-s3-cdn-cf.behance.net/projects/404/8a4686152685969.Y3JvcCw5NDgsNzQyLDIyNSww.jpg);
+  transition: 5s;
+  transition-delay: 5s;
+}
+.portfolio_image4:hover {
+  background-image: url(https://mir-s3-cdn-cf.behance.net/projects/404/ce04ed145227159.Y3JvcCwxMjMyLDk2NCwzNDQsMA.png);
+  transition: 5s;
+  transition-delay: 5s;
+}
+
 @media screen and (max-width: 600px) {
   nav {
     width: 100%;
