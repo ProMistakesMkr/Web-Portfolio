@@ -346,10 +346,10 @@ h1 {
 }
 
 h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif !important;
   font-weight: 600 !important; /* Medium weight for Montserrat */
   font-size: 16px !important;
-  color: #0e1821;
+  color: #0e1821 !important;
 }
 h4 {
   font-family: "Montserrat", sans-serif;
@@ -357,6 +357,26 @@ h4 {
   font-size: 14px !important;
   color: #0e1821;
 }
+
+#mini_card{
+  background-color: #e59cda;
+  height: 2rem;
+  width: 7rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.github_link{
+  padding-top: 15px;
+}
+
+a{
+  color: #0e1821 !important;
+  text-decoration: none !important;
+}
+
 
 #colorOverride1 {
   background-color: #e59cda;

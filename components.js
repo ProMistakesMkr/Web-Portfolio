@@ -1,47 +1,52 @@
-const Sections = [
-  {
-    id: 1,
-    title: "Card Title 1",
-    description: "This is the description for card 1.",
-  },
-  {
-    id: 2,
-    title: "Card Title 2",
-    description: "This is the description for card 2.",
-  },
+document.addEventListener("DOMContentLoaded", function () {
+  // Get the <h3> element by its id
+  var aboutLink = document.getElementById("about_link");
+  var interestsLink = document.getElementById("interests_link");
+  var portfolioLink = document.getElementById("portfolio_link");
+  var approachLink = document.getElementById("approach_link");
+  var contactLink = document.getElementById("contact_link");
 
-  {
-    id: 3,
-    title: "Card Title 3",
-    description: "This is the description for card 3.",
-  },
+  // Add a click event listener to the <h3> element
+  aboutLink.addEventListener("click", function () {
+    // Scroll to the element with the id "about_section" smoothly
+    document.getElementById("about_section").scrollIntoView({
+      behavior: "smooth",
+    });
+  });
 
-  {
-    id: 4,
-    title: "Card Title 4",
-    description: "This is the description for card 4.",
-  },
+  interestsLink.addEventListener("click", function () {
+    // Scroll to the element with the id "interests_section" smoothly
+    document.getElementById("interests_section").scrollIntoView({
+      behavior: "smooth",
+    });
+  });
 
-  {
-    id: 5,
-    title: "Card Title 5",
-    description: "This is the description for card 5.",
-  },
-  // Add more card objects here following the same format
-];
+  portfolioLink.addEventListener("click", function () {
+    // Scroll to the element with the id "portfolio_section" smoothly
+    document.getElementById("portfolio_section").scrollIntoView({
+      behavior: "smooth",
+    });
+  });
 
+  approachLink.addEventListener("click", function () {
+    // Scroll to the element with the id "approach_section" smoothly
+    document.getElementById("approach_section").scrollIntoView({
+      behavior: "smooth",
+    });
+  });
 
-const cardjs =document.querySelector('#cardjs');
+  contactLink.addEventListener("click", function () {
+    // Scroll to the element with the id "contact_section" smoothly
+    document.getElementById("contact_section").scrollIntoView({
+      behavior: "smooth",
+    });
+  });
 
-
-Sections.forEach(section => {
-	const card = document.createElement('div')
-	card.innerHTML=`
-	<h3>${section.title}</h3>
-	<h4>${section.description}</h4>
-	
-	`
-
-	cardjs.appendChild(card)
-	
+  // Optional: You can do the same for the label element if needed
+  /*  var aboutLabel = document.getElementsByClassName("colorOverride1");
+  aboutLabel.addEventListener("click", function() {
+      document.getElementById("about_section").scrollIntoView({
+          behavior: "smooth"
+      });
+  }); */
 });
