@@ -6,6 +6,10 @@ header {
 }
 
 body {
+  /*Variables*/
+  --border-radius: 2rem;
+  --dark-blue: #0e1821;
+
   background-color: #0e1821;
   margin-top: 0px;
   margin-left: 0px;
@@ -62,7 +66,15 @@ body {
   padding-right: 0%;
   background-color: transparent;
   width: 96%;
+
 }
+
+.about_section_override{
+  padding-top: 40rem;
+}
+
+
+
 .large_spacers {
   background-color: #32afc9;
   display: flex;
@@ -73,6 +85,18 @@ body {
   justify-content: center;
   align-items: left;
   flex-shrink: 0;
+
+  /*Test*/
+
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.large_spacers_override{
+
+  width: 38.4rem;
+  height: 20rem;
+  
+
 }
 
 .skinny_spacers {
@@ -85,6 +109,35 @@ body {
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
+}
+
+/* Define a CSS animation for continuous rotation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+/* Apply the animation to the image */
+/* .skinny_spacers img:hover {
+  animation: spin 2s linear infinite; 
+} */
+
+/* Apply the animation to the image */
+.skinny_spacers:hover img {
+  animation: spin 2.5s linear infinite;
 }
 
 .group_text {
@@ -101,6 +154,10 @@ body {
   border-radius: 50%; /* Makes the section circular */
   overflow: hidden; /* Hides anything outside the circular area */
   position: relative; /* Allows positioning of the image inside */
+}
+
+.minidescription {
+  align-self: center;
 }
 
 /* Style the image within the circular section */
@@ -414,26 +471,27 @@ i {
   margin-right: 12px;
 }
 
+.portfolio_image2 {
+  /* Set initial background image */
+  background-image: none;
+  /* Add transition property */
+  transition: background-image 0.3s ease;
+}
+
 .portfolio_image1:hover {
   background-image: url(https://mir-s3-cdn-cf.behance.net/projects/404/cff287138547019.Y3JvcCwxMzgwLDEwODAsNTEsMA.png);
-  transition: 5s;
-  transition-delay: 5s;
 }
+
 .portfolio_image2:hover {
   background-image: url(https://mir-s3-cdn-cf.behance.net/projects/404/cec4d6158573537.Y3JvcCwxMzgwLDEwODAsMCww.png);
-  transition: 5s;
-  transition-delay: 5s;
+  transition-delay: 2s;
 }
 
 .portfolio_image3:hover {
   background-image: url(https://mir-s3-cdn-cf.behance.net/projects/404/8a4686152685969.Y3JvcCw5NDgsNzQyLDIyNSww.jpg);
-  transition: 5s;
-  transition-delay: 5s;
 }
 .portfolio_image4:hover {
   background-image: url(https://mir-s3-cdn-cf.behance.net/projects/404/ce04ed145227159.Y3JvcCwxMjMyLDk2NCwzNDQsMA.png);
-  transition: 5s;
-  transition-delay: 5s;
 }
 
 @media screen and (max-width: 600px) {

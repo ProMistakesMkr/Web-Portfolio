@@ -50,3 +50,44 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   }); */
 });
+
+/* TEST AREA */
+
+const largeSpacers = document.querySelector(".large_spacers");
+const skinnySpacers = document.querySelector(".skinny_spacers");
+const circularSection = document.querySelector(".circular-section");
+const image = circularSection.querySelector("img");
+
+// Get reference to the image inside the skinny spacers
+const imageInsideSkinny = document.querySelector(".skinny_spacers img");
+
+// Add event listener for mouse hover on skinny spacers
+skinnySpacers.addEventListener("mouseenter", function () {
+  // Add a class to trigger CSS animation
+  skinnySpacers.classList.add("spin-animation");
+});
+
+skinnySpacers.addEventListener("mouseleave", function () {
+  // Remove the class to stop the animation
+  skinnySpacers.classList.remove("spin-animation");
+});
+
+/**/
+
+// Get the element with the class "largespaceranimation"
+const largespaceranimation = document.querySelector('.largespaceranimation');
+const aboutsectionmodify = document.querySelector('.about_section')
+
+// Add event listeners for mouse enter and mouse leave events
+largespaceranimation.addEventListener('mouseenter', function() {
+  // Change the dimensions smoothly on mouse enter
+  largespaceranimation.classList.add('large_spacers_override');
+  aboutsectionmodify.add('about_section_override');
+});
+
+largespaceranimation.addEventListener('mouseleave', function() {
+  // Reset the dimensions on mouse leave
+  largespaceranimation.classList.remove('large_spacers_override');
+});
+
+/* TEST AREA END */
