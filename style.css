@@ -485,7 +485,7 @@ i {
 }
 
 .portfolio_image2:hover {
-  background-image: url(https://mir-s3-cdn-cf.behance.net/projects/404/cec4d6158573537.Y3JvcCwxMzgwLDEwODAsMCww.png);
+  background-image: url(./src/proyectoFlorecimiento.png);
   transition-delay: 2s;
 }
 
